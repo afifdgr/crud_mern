@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Afivve",
+    "email" : "email@gmail.com",
+    "gender" : "Male"
+}
+
+###
+GET http://localhost:5000/users/64239e04311257431e347f69
+
+###
+PATCH http://localhost:5000/users/64239e04311257431e347f69
+Content-Type: application/json
+
+{
+    "name" : "Afivve",
+    "email" : "email2@gmail.com",
+    "gender" : "Male"
+}
+
+###
+DELETE http://localhost:5000/users/64239e04311257431e347f69
